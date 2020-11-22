@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">a1_homeWork_1</string>
+    <string name="user_txt">Введите логин</string>
+    <string name="welcome_txt">Здравствуйте! Для начала войдите в аккаунт:</string>
+    <string name="editName_txt">ваш логин</string>
+    <string name="password_txt">Введите пароль</string>
+    <string name="editPassword_txt">ваш пароль</string>
+</resources>

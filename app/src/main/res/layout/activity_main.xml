@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/orange"
+    >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/mandarin"
+        />
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ViewStyle" />
+
+
+    <TextView
+        android:id="@+id/user_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/LoginViewStyle"/>
+
+    <EditText
+        android:id="@+id/edit_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/EditUserStyle" >
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/PasswordViewStyle"
+        />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/EditPasswordStyle"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Login"
+        android:text="Войти"
+        android:background="@drawable/bg_button"
+        style="@style/ButtonViewStyle"/>
+
+</LinearLayout>
