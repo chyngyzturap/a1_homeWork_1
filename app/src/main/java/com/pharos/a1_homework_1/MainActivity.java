@@ -31,12 +31,19 @@ public class MainActivity extends Activity {
 
     }
 
-    public void Login(View view) {
-        if (username.getText().toString().equals("geektech") &&
-                password.getText().toString().equals("geektech")) {
-            Toast.makeText(getApplicationContext(), "Успешно!", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(getApplicationContext(), "Вы ввели не правильные данные!", Toast.LENGTH_SHORT).show();
+
+    public void login(View view) {
+        if (username.getText().toString().isEmpty()) {
+            Toast.makeText(getApplicationContext(), "Вы ввели не правильные данные!", Toast.LENGTH_SHORT).show();}
+            if (username.getText().toString().equals("geektech") &&
+                    password.getText().toString().equals("geektech")) {
+                Toast.makeText(getApplicationContext(), "Успешно!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(getApplicationContext(), "Вы ввели не правильные данные!", Toast.LENGTH_SHORT).show();
+            }
+            if(password.getText().toString().length()<6){
+                password.setError("Меньше 6 символов!");
+                Toast.makeText(getApplicationContext(), "Пожалуйста, введите больше 10 символов", Toast.LENGTH_SHORT).show();
+            }
         }
     }
-}

@@ -53,7 +53,7 @@
         android:id="@+id/button_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="Login"
+        android:onClick="login"
         android:text="Войти"
         android:background="@drawable/bg_button"
         style="@style/ButtonViewStyle"/>
